@@ -39,15 +39,6 @@ object Utils {
         } else startActivity(intent)
     }
 
-
-    fun ComponentActivity.clickOnBackPressed(action: (() -> Unit)) {
-        onBackPressedDispatcher.addCallback(object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                action()
-            }
-        })
-    }
-
     fun setShowHidePassword(
         editText: EditText,
         isPasswordHide: Boolean,

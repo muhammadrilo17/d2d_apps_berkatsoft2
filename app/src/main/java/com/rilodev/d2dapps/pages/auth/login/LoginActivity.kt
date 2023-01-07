@@ -10,8 +10,6 @@ import com.rilodev.d2dapps.pages.auth.register.RegisterActivity
 import com.rilodev.d2dapps.pages.main.MainActivity
 import com.rilodev.d2dapps.core.data.Resource
 import com.rilodev.d2dapps.core.ui.baseview.BaseViewActivity
-import com.rilodev.d2dapps.core.utils.CustomDialog.confirmExitDialog
-import com.rilodev.d2dapps.core.utils.Utils.clickOnBackPressed
 import com.rilodev.d2dapps.core.utils.Utils.movePageAndRemoveTask
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
@@ -39,10 +37,6 @@ class LoginActivity : BaseViewActivity() {
         buttonSignInListener()
         registerListener()
         binding.loginResult.visibility = View.GONE
-
-        clickOnBackPressed {
-            confirmExitDialog()
-        }
     }
 
     private fun isLoggedIn() {
@@ -51,7 +45,7 @@ class LoginActivity : BaseViewActivity() {
                 showLoadingDialog()
                 Timer().schedule(delay = 2000) {
                     dismissLoadingDialog()
-                    movePage(MainActivity::class.java)
+                    movePageAndRemoveTask(MainActivity::class.java)
                 }
             }
         }

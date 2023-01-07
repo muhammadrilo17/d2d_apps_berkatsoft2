@@ -100,7 +100,7 @@ class HistoryFragment : Fragment() {
     private fun recyclerViewCurrentTask() {
         currentTaskAdapter = CurrentTaskRvAdapter()
 
-        currentTaskAdapter.onItemClicked = { task, position ->
+        currentTaskAdapter.onItemClicked = { task, _ ->
             val timeEnd = if (task.timeDateEnded == null) "Now" else Utils.timeFormatter(
                 task.timeDateEnded!!, Constants.DATETIME_FORMATTER_DD_MM_YYYY,
             )

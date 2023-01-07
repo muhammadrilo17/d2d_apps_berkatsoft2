@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import com.rilodev.d2dapps.R
 import com.rilodev.d2dapps.core.data.local.entity.PresenceEntity
 import com.rilodev.d2dapps.core.utils.Constants
 import com.rilodev.d2dapps.core.utils.Utils
@@ -66,6 +65,5 @@ class PresenceFragment : Fragment() {
         viewModel.insertPresence(presence)
         binding.infoDailyPresence.text = String.format("You've been do presence today")
         binding.presenceButton.text = String.format("Done for Today")
-        binding.presenceButton.setBackgroundColor(resources.getColor(R.color.red))
     }
 }
