@@ -12,7 +12,6 @@ import com.rilodev.d2dapps.core.utils.Constants
 import com.rilodev.d2dapps.core.utils.Utils
 import com.rilodev.d2dapps.databinding.FragmentPresenceBinding
 import dagger.hilt.android.AndroidEntryPoint
-import io.grpc.okhttp.internal.Util
 
 @AndroidEntryPoint
 class PresenceFragment : Fragment() {

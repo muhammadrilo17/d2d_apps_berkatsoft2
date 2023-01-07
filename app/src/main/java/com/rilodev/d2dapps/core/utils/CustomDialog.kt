@@ -5,7 +5,6 @@ import android.content.Intent
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import com.rilodev.d2dapps.databinding.LogoutDialogBinding
-import com.rilodev.d2dapps.databinding.PopupAddTaskBinding
 import com.rilodev.d2dapps.databinding.PopupDetailCurrentTaskBinding
 import com.rilodev.d2dapps.databinding.PopupLoadingDialogBinding
 
@@ -67,18 +66,6 @@ object CustomDialog {
             action()
             builder.dismiss()
         }
-
-        builder.setView(view.root)
-        builder.setCancelable(true)
-        builder.show()
-        return builder
-    }
-
-    fun Activity.addTaskDialog(
-        action: (() -> Unit) = {}
-    ): AlertDialog {
-        val builder = AlertDialog.Builder(this).create()
-        val view = PopupAddTaskBinding.inflate(layoutInflater)
 
         builder.setView(view.root)
         builder.setCancelable(true)

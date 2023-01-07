@@ -10,7 +10,6 @@ import com.rilodev.d2dapps.pages.auth.register.RegisterActivity
 import com.rilodev.d2dapps.pages.main.MainActivity
 import com.rilodev.d2dapps.core.data.Resource
 import com.rilodev.d2dapps.core.ui.baseview.BaseViewActivity
-import com.rilodev.d2dapps.core.utils.CustomDialog
 import com.rilodev.d2dapps.core.utils.CustomDialog.confirmExitDialog
 import com.rilodev.d2dapps.core.utils.Utils.clickOnBackPressed
 import com.rilodev.d2dapps.core.utils.Utils.movePageAndRemoveTask

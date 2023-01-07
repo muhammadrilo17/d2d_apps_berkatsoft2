@@ -1,7 +1,6 @@
 package com.rilodev.d2dapps.core.data.local.entity
 
 import android.provider.BaseColumns
-import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey

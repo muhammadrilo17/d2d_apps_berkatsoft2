@@ -1,9 +1,6 @@
 package com.rilodev.d2dapps.core.ui.rvadapter
 
 import android.annotation.SuppressLint
-import android.content.Context
-import android.text.Layout
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +11,7 @@ import com.rilodev.d2dapps.core.utils.Constants
 import com.rilodev.d2dapps.core.utils.Utils
 import com.rilodev.d2dapps.databinding.ItemTaskBinding
 
-class CurrentTaskRvAdapter(): RecyclerView.Adapter<CurrentTaskRvAdapter.ViewHolder>() {
+class CurrentTaskRvAdapter: RecyclerView.Adapter<CurrentTaskRvAdapter.ViewHolder>() {
     private val listData = ArrayList<TaskModel>()
     var onItemClicked: ((TaskModel, Int) -> Unit)? = null
 

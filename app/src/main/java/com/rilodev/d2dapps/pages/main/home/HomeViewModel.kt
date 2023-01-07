@@ -1,9 +1,7 @@
 package com.rilodev.d2dapps.pages.main.home
 
 import androidx.lifecycle.*
-import com.rilodev.d2dapps.core.data.Resource
 import com.rilodev.d2dapps.core.data.local.entity.TaskEntity
-import com.rilodev.d2dapps.core.domain.model.TaskModel
 import com.rilodev.d2dapps.core.domain.usecase.task.TaskUseCase
 import com.rilodev.d2dapps.core.domain.usecase.user.UserUseCase
 import com.rilodev.d2dapps.core.utils.payload.TaskPayload

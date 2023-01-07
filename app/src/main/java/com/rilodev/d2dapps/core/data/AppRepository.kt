@@ -1,6 +1,5 @@
 package com.rilodev.d2dapps.core.data
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.google.firebase.auth.AuthResult
@@ -10,14 +9,12 @@ import com.google.firebase.firestore.SetOptions
 import com.rilodev.d2dapps.core.data.local.LocalDataSource
 import com.rilodev.d2dapps.core.data.local.entity.PresenceEntity
 import com.rilodev.d2dapps.core.data.local.entity.TaskEntity
-import com.rilodev.d2dapps.core.domain.model.TaskModel
 import com.rilodev.d2dapps.core.domain.model.UserModel
 import com.rilodev.d2dapps.core.domain.repository.IAuthRepository
 import com.rilodev.d2dapps.core.domain.repository.IPresenceRepository
 import com.rilodev.d2dapps.core.domain.repository.ITaskRepository
 import com.rilodev.d2dapps.core.domain.repository.IUserRepository
 import com.rilodev.d2dapps.core.utils.Constants
-import com.rilodev.d2dapps.core.utils.mapper.TaskMapper
 import com.rilodev.d2dapps.core.utils.payload.TaskPayload
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -35,7 +32,6 @@ class AppRepository @Inject constructor(
     private val localDataSource: LocalDataSource,
 ) : IAuthRepository, ITaskRepository, IUserRepository, IPresenceRepository {
     private val userCollectionReference = db.collection(Constants.USERS_COLLECTION)
-    private val taskCollectionReference = db.collection(Constants.TASK_COLLECTION)
 
     private val _userData = MutableLiveData<UserModel>()
     override val userData: LiveData<UserModel> = _userData
@@ -77,7 +73,6 @@ class AppRepository @Inject constructor(
             firebaseAuth.signInWithEmailAndPassword(email, password).await()
             if (firebaseAuth.currentUser?.uid != null) {
                 val data = loadUserData(firebaseAuth.currentUser?.uid.toString())
-                Log.d("RESULT DATA", data.toString())
                 _userData.postValue(data)
                 Resource.Success(true)
             } else Resource.Error("Login Gagal!")
@@ -142,6 +137,4 @@ class AppRepository @Inject constructor(
     override fun isPresenceExist(date: String): Flow<Boolean> {
         return flow { emit(localDataSource.isPresenceExist(date).first()) }
     }
-
-
 }

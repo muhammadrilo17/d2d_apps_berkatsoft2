@@ -15,10 +15,6 @@ import javax.inject.Inject
 class LoginViewModel @Inject constructor(private val useCase: AuthUseCase): ViewModel() {
     private var resultLogin = MutableLiveData<Resource<Boolean>>()
     private var resultLoggedIn = MutableLiveData<Boolean>()
-    fun reset() {
-        resultLogin = MutableLiveData<Resource<Boolean>>()
-        resultLoggedIn = MutableLiveData<Boolean>()
-    }
     fun login(email: String, password: String): LiveData<Resource<Boolean>> {
         viewModelScope.launch {
             resultLogin.value = useCase.loginAuthUseCase(email, password)
