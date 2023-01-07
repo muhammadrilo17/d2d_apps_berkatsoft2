@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">D2D Apps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="presence">Presence</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="field_cannot_empty">Field cannot empty</string>
+    <string name="email_invalid">Email is invalid</string>
+    <string name="minimum_pass_6_char">Minimum Password 6 Character</string>
+    <string name="tv_sign_in">SIgn In</string>
+    <string name="select">Select</string>
+    <string name="tv_create_new_account">Create New Account</string>
+    <string name="icon">Icon</string>
+    <string name="exit_logout_text">Exit</string>
+    <string name="tv_yes">Yes</string>
+    <string name="tv_cancel">Cancel</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="tv_register">Register</string>
+    <string name="i_have_an_account">I have an Account, <b>Click Here!</b></string>
+    <string name="password_and_confirm_not_matches">Password and Confirm Password Not Matches</string>
+    <string name="new_task">New Task</string>
+    <string name="add_task">Add Task</string>
+    <string name="end_task">End Task</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="save">Save</string>
+    <string name="exit">Exit</string>
+    <string name="loading">Loading…</string>
+    <string name="daily_presence">Daily Presence</string>
+    <string name="do_presence_today">Do Presence Today</string>
+    <string name="select_history_date">Select History Date</string>
+    <string name="there_s_no_data">There\'s no data</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.rilodev.d2dapps.pages.main.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/presence"
+        android:name="com.rilodev.d2dapps.pages.main.presence.PresenceFragment"
+        android:label="@string/presence"
+        tools:layout="@layout/fragment_presence" />
+
+    <fragment
+        android:id="@+id/history"
+        android:name="com.rilodev.d2dapps.pages.main.history.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.rilodev.d2dapps.pages.main.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

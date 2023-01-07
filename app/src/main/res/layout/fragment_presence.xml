@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".pages.main.presence.PresenceFragment">
+
+    <TextView
+        android:id="@+id/tv_presence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/daily_presence"
+        android:textAlignment="center"
+        android:textColor="@color/blue_electric_900"/>
+
+    <TextView
+        android:id="@+id/info_daily_presence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/daily_presence"
+        android:textAlignment="center"
+        android:textColor="@color/blue_electric_500"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/presence_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="16dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"/>
+
+    <com.rilodev.d2dapps.core.ui.customview.ButtonCommon
+        android:id="@+id/presence_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingHorizontal="16dp"
+        android:text="@string/do_presence_today"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red"> #ff0000</color>
+
+    <color name="blue_electric_900">#093475</color>
+    <color name="blue_electric_700">#104A8D</color>
+    <color name="blue_electric_600">#1968AF</color>
+    <color name="blue_electric_500">#258BD1</color>
+    <color name="blue_electric_400">#33B1F4</color>
+    <color name="blue_electric_300">#65CEF8</color>
+    <color name="blue_electric_200">#84E1FB</color>
+    <color name="blue_electric_100">#ADF1FD</color>
+    <color name="blue_electric_light">#E7F3FF</color>
+
+    <color name="text_color_hint">#757575</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+</resources>
